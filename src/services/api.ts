@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { PokemonCardData } from '../types/pokemon';
 
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = 'https://pokelyzer.onrender.com';
+
 
 export const predictCard = async (
   setSlug: string,
