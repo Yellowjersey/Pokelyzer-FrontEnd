@@ -99,7 +99,7 @@ Card detail card with returned information
 ## 📝 Note
 
 **API Required:**  
-This frontend requires your [Pokélyzer FastAPI backend](#).  
+This frontend requires your [Pokélyzer FastAPI backend](https://github.com/Yellowjersey/Pokelyzer.git).  
 Clone and deploy both repos for full functionality.
 
 ---
@@ -107,7 +107,7 @@ Clone and deploy both repos for full functionality.
 ## 🤝 Author
 
 Built by **Gavin Bradford**  
-📫 bradfordgavin@gmail.com | [LinkedIn](#) | [GitHub](#)
+📫 bradfordgavin@gmail.com | [LinkedIn](https://www.linkedin.com/in/gavin-bradford-ab2566123/) | [GitHub](https://github.com/Yellowjersey)
 
 ---
 
