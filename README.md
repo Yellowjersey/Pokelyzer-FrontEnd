@@ -86,11 +86,12 @@ Visit `http://localhost:5173` (or the Vite dev URL) and test your predictions.
 
 ## 📷 Screenshots
 
-Include 2–3 screenshots in the README:
-- Card Search form with dropdown
-- Current Market Prices section
-- Historical + Predicted charts
-- Trading Recommendation callout
+Set drop down picker
+<img width="583" height="651" alt="image" src="https://github.com/user-attachments/assets/3afba6fa-309a-47d8-850b-f0d8213cc0a7" />
+
+Card detail card with returned information
+<img width="951" height="587" alt="image" src="https://github.com/user-attachments/assets/dd7129a6-9325-4a77-8f02-9315a4dd95d6" />
+
 
 ---
 
