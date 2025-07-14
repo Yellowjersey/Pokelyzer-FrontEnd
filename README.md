@@ -43,11 +43,11 @@ By default, this frontend is connected to **Gavin's hosted API**.
 To connect to your own backend:
 
 - Open `src/api/api.ts`
-- Change the `BASE_URL` value to your own FastAPI deployment URL.
+- Change the `API_BASE_URL` value to your own FastAPI deployment URL.
 
 Example:
 ```ts
-export const BASE_URL = "https://your-backend-url.up.railway.app";
+export const API_BASE_URL = "https://your-backend-url.up.railway.app";
 ```
 
 You can also use an `.env`:
