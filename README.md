@@ -87,6 +87,7 @@ Visit `http://localhost:5173` (or the Vite dev URL) and test your predictions.
 ## 📷 Screenshots
 
 Set drop down picker
+
 <img width="583" height="651" alt="image" src="https://github.com/user-attachments/assets/3afba6fa-309a-47d8-850b-f0d8213cc0a7" />
 
 Card detail card with returned information
