@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Search, Loader2 } from 'lucide-react';
+import {sets} from '../../sets'
 
 interface SearchFormProps {
   onSubmit: (data: {
@@ -44,21 +45,36 @@ const SearchForm: React.FC<SearchFormProps> = ({ onSubmit, loading }) => {
       
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <label htmlFor="setSlug" className="block text-sm font-semibold text-gray-700 mb-2">
-              Set Slug
-            </label>
-            <input
-              type="text"
-              id="setSlug"
-              name="setSlug"
-              value={formData.setSlug}
-              onChange={handleChange}
-              placeholder="e.g., base-set"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-              required
-            />
-          </div>
+        <div>
+          <label htmlFor="setSlug" className="block text-sm font-semibold text-gray-700 mb-2">
+            Card Set
+          </label>
+          <select
+            id="setSlug"
+            name="setSlug"
+            value={formData.setSlug}
+            onChange={(e) => {
+              const selectedSet = sets.find(set => set.slug === e.target.value);
+              if (selectedSet) {
+                setFormData({
+                  ...formData,
+                  setSlug: selectedSet.slug,
+                  setNumber: selectedSet.setNumber
+                });
+              }
+            }}
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+            required
+          >
+            <option value="">-- Select a Set --</option>
+            {sets.map((set) => (
+              <option key={set.slug} value={set.slug}>
+                {set.name}
+              </option>
+            ))}
+          </select>
+        </div>
+
           
           <div>
             <label htmlFor="cardName" className="block text-sm font-semibold text-gray-700 mb-2">
