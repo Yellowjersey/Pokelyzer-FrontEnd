@@ -2,7 +2,7 @@
 
 > **Pokélyzer** — Interactive web dashboard for Pokémon TCG price prediction & analysis.
 
-This React app connects to the [Pokélyzer FastAPI backend](#) to show:
+This React app connects to the [Pokélyzer FastAPI backend](https://github.com/Yellowjersey/Pokelyzer.git) to show:
 - ✅ Current market prices for any card
 - ✅ Historical price trends
 - ✅ 6-month price forecasts using Prophet
